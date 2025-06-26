@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "exports":{
-    "./config" : "./src/index.ts"
+  "type": "module",
+  "exports": {
+    "./config": "./src/envLoader.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +14,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^22.15.3"
+    "@types/node": "^22.15.3",
+    "dotenv": "^16.5.0"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*"
