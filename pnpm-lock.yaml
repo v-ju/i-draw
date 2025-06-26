@@ -149,6 +149,9 @@ importers:
       '@types/node':
         specifier: ^22.15.3
         version: 22.15.3
+      dotenv:
+        specifier: ^16.5.0
+        version: 16.5.0
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*

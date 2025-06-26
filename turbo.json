@@ -1,8 +1,13 @@
 {
+  "globalDependencies": [
+    "packages/shared/src/.env",   
+    "apps/web/.env*"
+  ],
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
   "tasks": {
     "build": {
+      "env": ["JWT_SECRET"],
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**"]
@@ -18,4 +23,5 @@
       "persistent": true
     }
   }
+
 }
